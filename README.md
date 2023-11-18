@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## Live Hosted Link - https://terribly-tiny-tales-profile.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. **App Component**
 
-## Available Scripts
+File: `App.js`
 
-In the project directory, you can run:
+The `App` component serves as the main entry point for your application. It orchestrates the following components:
 
-### `npm start`
+- **Header**: Displays the application's header, including a logo and navigation button.
+- **Profile**: Renders user profile information, such as background image, profile picture, and statistics.
+- **PostsTop**: A simple component indicating the total number of posts.
+- **Posts**: Displays a list of posts using the `SinglePost` component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2. **Header Component**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+File: `Header.js`
 
-### `npm test`
+The `Header` component represents the application's header. It consists of a logo, the text "STORIES," and a button labeled "Courses."
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. **Profile Component**
 
-### `npm run build`
+File: `Profile.js`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `Profile` component showcases user-specific details, including a background image, profile picture, user statistics (followers, following), professional information, and engagement metrics.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 4. **PostsTop Component**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+File: `PostsTop.js`
 
-### `npm run eject`
+A straightforward component that reveals the total number of posts. It's positioned at the top of the posts section.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 5. **Posts Component**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+File: `Posts.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `Posts` component is responsible for rendering a list of posts. It utilizes the `SinglePost` component to present individual posts with titles, descriptions, creators, and timestamps.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 6. **SinglePost Component**
 
-## Learn More
+File: `SinglePost.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The `SinglePost` component represents an individual post, featuring a title, description, creator information, timestamp, and a thumb-up icon for engagement. Each post is enclosed within a container for consistent styling.
