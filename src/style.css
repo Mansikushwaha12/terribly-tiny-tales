@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  min-height: 100vh; display: flex;
+  justify-content: center;
+  background-color: rgb(9, 8, 8);
+    
+}
+.app{
+  width: 400px;
+  height: 100%;
+  color: white;
+  background-color: white;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+}
+.header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-left: 20px;
+  align-items: center;
+   
+}
+.left-header{
+  display: flex;
+  color: #fff;
+  height: 40px;
+
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  padding-bottom: 10px;
+  margin-right: 5px;
+}
+.header-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  position: relative; 
+
+}
+.header-text p{
+  font-size: 20px;
+  letter-spacing: 4px;
+  opacity: 0.8; 
+  font-weight: 700;
+}
+.header-text::before {
+  content: ''; 
+  position: absolute; 
+  top: 10;
+  padding: 6px;
+  left: 0px; 
+  height: 50%;
+  border-left: 1px solid rgb(255, 242, 0);
+}
+.right-header{
+  padding-right: 20px;
+}
+.right-header button{
+  width: 85px;
+  height: 35px;
+  padding: 4px 4px;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: rgb(255, 242, 0);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.profile {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+
+.profile-back img {
+  width: 100%;
+  height: auto;
+}
+
+/* Profile Image */
+.profile-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imgdiv {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid gray; 
+  position: absolute;
+  top: -26px;
+  left: 30px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-top h1 {
+  font-size: 18px;
+  position: absolute;
+  top: 7px;
+  left: 145px;
+  font-weight: bold;
+}
+
+.about-bottom div {
+  margin-top: 10px;
+}
+.about-bottom{
+  margin-left: 10px;
+}
+.about-bottom .followers{
+  width: 130px;
+   color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+.about-bottom .followers p{
+  border: 2px solid grey;
+  padding: 3px 13px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.about-bottom h4{
+  font-weight: 300;
+  font-size: 10px;
+}
+.experience{
+  padding-left: 40px;
+  color: black;
+ 
+}
+.experience h3{
+  font-weight: 400;
+  color: black;
+  opacity: 0.7;
+  font-size: 18px;
+}
+.experience p{
+  color: rgb(0, 128, 0);
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 2px;
+}
+.experience .likes{
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-bottom: 20px;
+}
+.experience .likes p{
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.experience .likes .icons{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.experience .likes img{
+  width: 18px;
+}
+
+.posts-top{
+  height: 40px;
+  color: rgb(35, 234, 161);
+  font-weight: 700;
+  display: flex;
+}
+.left-posts{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.3px solid rgb(205, 196, 196);
+  border-right: 0.3px solid rgb(205, 196, 196);
+ 
+}
+.right-posts{
+  width: 70%;
+  border-bottom: 0.3px solid rgb(205, 196, 196);
+}
+.posts{
+  padding-top: 30px;
+  
+}
+.single-post{
+  padding: 0 20px 0 20px;
+  width: 100%;
+  /* height: 100%; */
+  color: black;
+  border-bottom: 0.5px solid rgb(224, 215, 215);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+
+}
+.post-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.single-post h1{
+  font-size: 20px;
+}
+.single-post .post-desc{
+  padding-top: 23px;
+  line-height: 25px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.single-post .post-footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-top: 30px;
+}
+.single-post img{
+  width: 18px;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    width: 100%;
+  }
+}
